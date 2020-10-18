@@ -2,8 +2,8 @@
   <div class="container">
     <Modal
       v-if="modalVisible"
-      @close="modalVisible = false"
       title="Register for Updates"
+      @close="modalVisible = false"
     >
       <form
         name="expression-of-interest"
@@ -48,7 +48,7 @@
         and macOS devices!
       </p>
       <div class="links">
-        <a @click="modalVisible = true" target="_blank" class="button--green">
+        <a target="_blank" class="button--green" @click="modalVisible = true">
           Register for Updates
         </a>
         <a href="https://github.com/mattrax/Mattrax" class="button--grey">
@@ -63,7 +63,7 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  data: function () {
+  data() {
     return {
       modalVisible: false,
     }
@@ -114,7 +114,8 @@ form {
   padding-top: 15px;
 }
 
-.reason-field, .email-field {
+.reason-field,
+.email-field {
   width: 100%;
   padding: 5px 10px;
   margin: 8p0 0;
