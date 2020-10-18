@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Modal
-      v-if="modalVisible"
+      v-show="modalVisible"
       title="Register for Updates"
       @close="modalVisible = false"
     >
