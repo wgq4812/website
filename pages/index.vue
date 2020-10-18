@@ -11,22 +11,19 @@
         action="/"
         data-netlify="true"
       >
+        <input type="hidden" name="form-name" value="expression-of-interest">
         <p class="form-item">
-          <label
-            >Your Email:
-            <input type="email" name="email" required class="email-field"
-          /></label>
+          <label>Your Email: </label>
+          <input type="email" name="email" required class="email-field" />
         </p>
         <p class="form-item">
-          <label
-            >Interested For Use In:
-            <select name="interest-reason" required class="reason-field">
-              <option value="msp-provider">MSP Provider</option>
-              <option value="internal-it-team">Internal IT Team</option>
-              <option value="personal">Personal</option>
-              <option value="other" selected="selected">Other</option>
-            </select></label
-          >
+          <label>Interested For Use In: </label>
+          <select name="interest-reason" required class="reason-field">
+            <option value="msp-provider">MSP Provider</option>
+            <option value="internal-it-team">Internal IT Team</option>
+            <option value="personal">Personal</option>
+            <option value="other" selected="selected">Other</option>
+          </select>
         </p>
         <div class="modal-footer">
           <button
