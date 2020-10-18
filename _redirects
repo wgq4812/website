@@ -1,5 +1,2 @@
 # Redirect default Netlify subdomain to primary domain
 https://mattrax-website.netlify.com/* https://mattrax.otbeaumont.me/:splat 301!
-
-# Until The Website is Created Redirect To The Github Repo
-/* https://github.com/mattrax/Mattrax
