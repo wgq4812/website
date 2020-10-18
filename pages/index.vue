@@ -11,7 +11,7 @@
         action="/"
         data-netlify="true"
       >
-        <input type="hidden" name="form-name" value="expression-of-interest">
+        <input type="hidden" name="form-name" value="expression-of-interest" />
         <p class="form-item">
           <label>Your Email: </label>
           <input type="email" name="email" required class="email-field" />
