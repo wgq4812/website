@@ -25,6 +25,15 @@
             <option value="other" selected="selected">Other</option>
           </select>
         </p>
+         <p class="form-item">
+          <label>Deployment Environment: </label>
+          <select name="deployment-env" required class="reason-field">
+            <option value="managed-cloud" selected="selected">Official Managed Cloud Hosting</option>
+            <option value="onprem">On-Premise</option>
+            <option value="private-cloud">Private Cloud</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
         <div class="modal-footer">
           <button
             type="submit"
