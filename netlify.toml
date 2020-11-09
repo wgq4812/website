@@ -1,6 +1,6 @@
 [build]
 publish = "dist/"
-command = "npm i -g vue-template-compiler && npm run build && npm run generate"
+command = "npm run build && npm run generate"
 
 [dev]
 framework = "nuxt" 
