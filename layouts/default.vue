@@ -1,5 +1,14 @@
 <template>
   <div>
+    <div class="navbar">
+      <div class="right">
+        <NuxtLink to="/" class="button--grey">Home</NuxtLink>
+        <NuxtLink to="/about" class="button--grey">About</NuxtLink>
+        <a href="https://github.com/mattrax/Mattrax" class="button--grey"
+          >Github</a
+        >
+      </div>
+    </div>
     <Nuxt />
   </div>
 </template>
@@ -51,5 +60,29 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  background: white;
+}
+
+.navbar .right {
+  float: right;
+}
+
+q {
+  font-style: italic;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+a {
+  color: inherit;
 }
 </style>
