@@ -52,10 +52,7 @@
       title="Join Slack Community"
       @close="slackModalVisible = false"
     >
-      <form
-        method="POST"
-        action="/.netlify/functions/invite-to-slack"
-      >
+      <form method="POST" action="/.netlify/functions/invite-to-slack">
         <p class="form-item">
           <label>Your Email: </label>
           <input type="email" name="email" required class="email-field" />
@@ -76,14 +73,18 @@
       <h1 class="title">Mattrax</h1>
       <p>Open Source MDM (Mobile Device Management) Server.</p>
       <p>
-        Planning to launch February 2021 with support for managing Windows 10, Linux
-        and macOS devices!
+        Planning to launch February 2021 with support for managing Windows 10,
+        Linux and macOS devices!
       </p>
       <div class="links">
         <a target="_blank" class="button--green" @click="modalVisible = true">
           Register for Updates
         </a>
-        <a target="_blank" class="button--grey" @click="slackModalVisible = true">
+        <a
+          target="_blank"
+          class="button--grey"
+          @click="slackModalVisible = true"
+        >
           Join Slack
         </a>
       </div>
