@@ -95,6 +95,11 @@
 <script lang="ts">
 import Vue from 'vue'
 
+interface MyWindow extends Window {
+  onNuxtReady(obj: object): void
+}
+declare var window: MyWindow
+
 export default Vue.extend({
   data() {
     return {
@@ -103,11 +108,13 @@ export default Vue.extend({
     }
   },
   mounted() {
-    window.onNuxtReady(() => {
-      const params = new URLSearchParams(window.location.search)
-      this.modalVisible = params.has('register-updates')
-      this.slackModalVisible = params.has('slack')
-    })
+    if (process.client) {
+      window.onNuxtReady(() => {
+        const params = new URLSearchParams(window.location.search)
+        this.modalVisible = params.has('register-updates')
+        this.slackModalVisible = params.has('slack')
+      })
+    }
   },
 })
 </script>
