@@ -102,6 +102,13 @@ export default Vue.extend({
       slackModalVisible: false,
     }
   },
+  mounted() {
+    window.onNuxtReady(() => {
+      const params = new URLSearchParams(window.location.search)
+      this.modalVisible = params.has('register-updates')
+      this.slackModalVisible = params.has('slack')
+    })
+  },
 })
 </script>
 
