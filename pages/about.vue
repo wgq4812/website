@@ -5,7 +5,7 @@
       <p>
         The goal of Mattrax is to make a simple to use, yet advanced Mobile
         Device Management server that allows a single policy to be enforced
-        across all of your organisations devices no matter the operating system.
+        across all of your organisation's devices no matter the operating system.
       </p>
       <br />
 
