@@ -9,5 +9,8 @@
   "devDependencies": {
     "node-fetch": "^2.6.1",
     "vuepress": "^1.7.1"
+  },
+  "dependencies": {
+    "vuepress-plugin-simple-analytics": "^1.0.3"
   }
 }
