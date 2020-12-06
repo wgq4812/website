@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="home-page">
     <Modal
       v-show="modalVisible"
       title="Register for Updates"
@@ -69,12 +69,12 @@
       </form>
     </Modal>
     <div>
-      <img src="/assets/logo.png" alt="Mattrax Dashboard (v1)" height="200px" />
+      <img src="../../assets/logo.png" alt="Mattrax Dashboard (v1)" height="200px" />
       <h1 class="title">Mattrax</h1>
       <p>Open Source MDM (Mobile Device Management) Server.</p>
       <p>
         Planning to launch February 2021 with support for managing Windows 10,
-        Linux and macOS devices!
+        Linux, macOS, Android and IOS devices!
       </p>
       <div class="links">
         <a target="_blank" class="button--green" @click="modalVisible = true">
@@ -87,45 +87,38 @@
         >
           Join Slack
         </a>
+        <a
+          href="mailto:hello@mattrax.app"
+          target="_blank"
+          class="button--grey"
+        >
+          Contact Us
+        </a>
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-interface MyWindow extends Window {
-  onNuxtReady(obj: object): void
-}
-declare var window: MyWindow
+<script>
+import Vue from "vue";
 
 export default Vue.extend({
   data() {
     return {
       modalVisible: false,
       slackModalVisible: false,
-    }
+    };
   },
   mounted() {
-    if (process.client) {
-      window.onNuxtReady(() => {
-        const params = new URLSearchParams(window.location.search)
-        this.modalVisible = params.has('register-updates')
-        this.slackModalVisible = params.has('slack')
-      })
-    }
+    const params = new URLSearchParams(window.location.search);
+    this.modalVisible = params.has("register-updates");
+    this.slackModalVisible = params.has("slack");
   },
-})
+});
 </script>
 
 <style scoped>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.home-page {
   text-align: center;
 }
 
@@ -140,8 +133,8 @@ form {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;

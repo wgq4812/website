@@ -2,21 +2,23 @@
   <div>
     <div class="navbar">
       <div class="right">
-        <NuxtLink to="/" class="button--grey">Home</NuxtLink>
-        <NuxtLink to="/about" class="button--grey">About</NuxtLink>
+        <a href="/" class="button--grey">Home</a>
+        <a href="/about" class="button--grey">About</a>
         <a href="https://github.com/mattrax/Mattrax" class="button--grey"
           >Github</a
         >
       </div>
     </div>
-    <Nuxt />
+    <main>
+      <Content />
+    </main>
   </div>
 </template>
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -79,10 +81,20 @@ q {
 
 q:before,
 q:after {
-  content: '';
+  content: "";
 }
 
 a {
   color: inherit;
+}
+
+main {
+  margin: 0 auto;
+  margin-bottom: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
 }
 </style>
