@@ -71,9 +71,9 @@
     <div>
       <img src="../../assets/logo.png" alt="Mattrax Dashboard (v1)" height="200px" />
       <h1 class="title">Mattrax</h1>
-      <p>Open Source MDM (Mobile Device Management) Server.</p>
+      <p>Open Source MDM (Mobile Device Management) Solution.</p>
       <p>
-        Planning to launch February 2021 with support for managing Windows 10,
+        Planning to launch late 2021 with support for managing Windows 10,
         Linux, macOS, Android and IOS devices!
       </p>
       <div class="links">

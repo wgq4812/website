@@ -4,8 +4,8 @@
       <div class="right">
         <a href="/" class="button--grey">Home</a>
         <a href="/about" class="button--grey">About</a>
-        <a href="https://github.com/mattrax/Mattrax" class="button--grey"
-          >Github</a
+        <a href="https://github.com/mattrax" class="button--grey"
+          >GitHub</a
         >
       </div>
     </div>
