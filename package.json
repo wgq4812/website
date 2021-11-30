@@ -1,16 +1,28 @@
 {
   "name": "website",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
-    "dev": "vuepress dev site",
-    "build": "vuepress build site"
-  },
-  "devDependencies": {
-    "node-fetch": "^2.6.1",
-    "vuepress": "^1.7.1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "vuepress-plugin-simple-analytics": "^1.0.3"
+    "@chakra-ui/react": "^1.7.2",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "framer-motion": "^4",
+    "next": "12.0.4",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^4.0.0-beta.11",
+    "@types/node": "16.11.11",
+    "@types/react": "17.0.37",
+    "eslint": "7",
+    "eslint-config-next": "12.0.4",
+    "typescript": "4.5.2"
   }
 }
