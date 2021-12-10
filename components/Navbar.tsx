@@ -1,4 +1,4 @@
-import Image from "next/image";
+import NextImage from "next/image";
 import NextLink from "next/link";
 import {
   Center,
@@ -22,7 +22,7 @@ function Navbar() {
         <Box userSelect="none" px={4} textAlign="center" verticalAlign="center">
           <NextLink href="/" passHref>
             <a>
-              <Image
+              <NextImage
                 src={mattraxLogo}
                 alt="Mattrax Logo"
                 width={75}

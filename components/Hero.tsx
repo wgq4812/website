@@ -1,11 +1,7 @@
 import { PropsWithChildren } from "react";
-import {
-  Box,
-  Flex,
-  Heading,
-  Img,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import NextImage from "next/image";
+import { Box, Flex, Heading, Img, useColorModeValue } from "@chakra-ui/react";
+import dashboardImage from "../public/img/dashboard.png";
 
 interface HeroProps {
   title: string;
@@ -38,14 +34,9 @@ function Navbar({ title, children }: PropsWithChildren<HeroProps>) {
             {children}
           </Box>
           <Box boxSize={{ base: "20", lg: "8" }} />
-          {/* TODO: Use Next Image for optimisations and take image as an argument to component */}
-          <Img
-            pos="relative"
-            marginEnd="-6rem"
-            w="50rem"
-            src="/img/dashboard.png"
-            alt="Mattrax Dashboard"
-          />
+          <Box pos={{ base: "static", md: "relative" }} marginEnd="-6rem" w={{ base: "full", md: "50rem" }}>
+            <NextImage src={dashboardImage} alt="Mattrax Dashboard" quality="90" layout="intrinsic" />
+          </Box>
         </Flex>
       </Box>
     </Box>
