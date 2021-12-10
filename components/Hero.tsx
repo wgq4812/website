@@ -7,7 +7,7 @@ interface HeroProps {
   title: string;
 }
 
-function Navbar({ title, children }: PropsWithChildren<HeroProps>) {
+function Hero({ title, children }: PropsWithChildren<HeroProps>) {
   return (
     <Box
       as="section"
@@ -35,7 +35,7 @@ function Navbar({ title, children }: PropsWithChildren<HeroProps>) {
           </Box>
           <Box boxSize={{ base: "20", lg: "8" }} />
           <Box pos={{ base: "static", md: "relative" }} marginEnd="-6rem" w={{ base: "full", md: "50rem" }}>
-            <NextImage src={dashboardImage} alt="Mattrax Dashboard" quality="90" layout="intrinsic" />
+            <NextImage src={dashboardImage} alt="Mattrax Dashboard" quality="90" placeholder="blur" />
           </Box>
         </Flex>
       </Box>
@@ -43,4 +43,4 @@ function Navbar({ title, children }: PropsWithChildren<HeroProps>) {
   );
 }
 
-export default Navbar;
+export default Hero;
