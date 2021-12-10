@@ -1,7 +1,6 @@
 [build]
-publish = "site/.vuepress/dist"
-command = "npm run build"
-functions = "functions"
+publish = ".next"
+command = "yarn build"
 
-[dev]
-command = "npm run dev"
+[[plugins]]
+package = "@netlify/plugin-nextjs" 
