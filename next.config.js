@@ -39,7 +39,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src plausible.otbeaumont.me *.sentry.io 'unsafe-inline' 'self'; connect-src plausible.otbeaumont.me *.sentry.io 'self'; img-src data: 'self'; style-src 'unsafe-inline' 'self'; report-uri https://o1082811.ingest.sentry.io/api/6099903/security/?sentry_key=6462a60adc3f470295743866b58f3787;"
+            value: "default-src 'self'; script-src plausible.otbeaumont.me *.sentry.io 'unsafe-inline' 'unsafe-eval' 'self'; connect-src plausible.otbeaumont.me *.sentry.io 'self'; img-src data: 'self'; style-src 'unsafe-inline' 'self'; report-uri https://o1082811.ingest.sentry.io/api/6099903/security/?sentry_key=6462a60adc3f470295743866b58f3787;"
           },
           {
             key: 'Access-Control-Allow-Origin',
